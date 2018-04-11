@@ -40,7 +40,7 @@ class ServerGroupCacheForceRefreshTask extends AbstractCloudProviderAwareTask im
   long backoffPeriod = TimeUnit.SECONDS.toMillis(10)
   long timeout = TimeUnit.MINUTES.toMillis(15)
 
-  long autoSucceedAfterMs = TimeUnit.MINUTES.toMillis(12)
+  long autoSucceedAfterMs = TimeUnit.MINUTES.toMillis(2)
 
   @Autowired
   CloudDriverCacheStatusService cacheStatusService
